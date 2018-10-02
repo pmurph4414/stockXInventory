@@ -24,16 +24,15 @@ class Shoe extends React.Component {
                 }}>
                 </div>
                 <select>
-                  <option value="none" disabled>Move to...</option>
-                  <option value="currentlyReading">Currently Reading</option>
-                  <option value="wantToRead">Want to Read</option>
-                  <option value="read">Read</option>
-                  <option value="none">None</option>
+                  <option value="add">Add</option>
+                  <option value="edit">Edit</option>
+                  <option value="remove">Remove</option>
                 </select>
               </div>
             </div>
             <div className="book-title">{shoe.brand}</div>
             <div className="book-title">{shoe.image}</div>
+            <div className="book-title">{shoe.style}</div>
             <div className="book-authors">{shoe.size}</div>
             <div className="book-authors">{shoe.upcid}</div>
           </div>
