@@ -1,0 +1,38 @@
+html, body, .root {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+}
+body, .app {
+  background: white;
+}
+
+/* main page */
+
+
+/* shoe grid */
+.shoe-grid-container {
+	width: 80%;
+	padding: 10px 50px 0 50px;
+}
+
+.shoe-grid-title {
+	padding: 2px;
+	background: #3baf28;
+	text-align: center;
+}
+
+.shoe-grid-title h1 {
+	color: white;
+}
+
+.shoe-grid {
+	width: 80%;
+	padding: 10px 50px 0 50px;
+	background-color: red;
+}
+
+.shoe-grid-items {
+	background-color: red;
+}
