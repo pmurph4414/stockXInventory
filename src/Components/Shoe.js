@@ -1,43 +1,46 @@
 import React from 'react';
-// import {Link} from 'react-router-dom';
 import {PropTypes} from 'prop-types';
 
 class Shoe extends React.Component {
-	static propTypes = {
-    	shoe: PropTypes.object.isRequired
+  static propTypes = {
+        shoe: PropTypes.object.isRequired,
+        onRemoveShoe: PropTypes.func.isRequired
   }
 
   render() {
-  	const shoe = this.props.shoe;
+  	const {shoe, onRemoveShoe} = this.props;
 
   	return (
-  		<div className="bookshelf">
-	       <li>
-          <div>
-            <div>
+  		<div>
+        <div className="shoe-details">
+  	       <li>
               <div>
-                <div 
-                style={{
-                  width: 200,
-                  height: 150,
-                  backgroundImage: `url("${shoe.image}")`
-                }}>
+                <div
+                  style={{
+                    width: 280,
+                    height: 220,
+                    backgroundImage: `url(${shoe.image})`,
+                    backgroundSize: 280
+                  }}>
                 </div>
-                <select>
-                  <option value="add">Add</option>
-                  <option value="edit">Edit</option>
-                  <option value="remove">Remove</option>
-                </select>
-              </div>
+                <div className="shoe-details-brand">{shoe.name}</div>
+                <div>{shoe.brand}</div>
+                <div>Size:<br /> 
+                  <span className="shoe-details-size">{shoe.size}</span>
+                </div>
+                <div>UPCid: {shoe.upcid}</div>
             </div>
-            <div className="book-title">{shoe.brand}</div>
-            <div className="book-title">{shoe.image}</div>
-            <div className="book-title">{shoe.style}</div>
-            <div className="book-authors">{shoe.size}</div>
-            <div className="book-authors">{shoe.upcid}</div>
-          </div>
-        </li>
-      </div>
+          </li>
+          <div className="shoe-add-btn-small">
+            <button
+              onClick={this.edit}>Edit
+            </button>
+            <button
+              onClick={() => this.props.onRemoveShoe(shoe)}>Remove
+            </button>
+          </div> 
+        </div>
+      </div>   
   	)
   }
 }

@@ -17,22 +17,76 @@ body, .app {
 	padding: 10px 50px 0 50px;
 }
 
-.shoe-grid-title {
+.shoe-header-title {
 	padding: 2px;
+	color: white;
 	background: #3baf28;
 	text-align: center;
 }
 
-.shoe-grid-title h1 {
-	color: white;
-}
-
 .shoe-grid {
-	width: 80%;
 	padding: 10px 50px 0 50px;
-	background-color: red;
 }
 
 .shoe-grid-items {
-	background-color: red;
+	list-style-type: none;
+	padding-bottom: 70px;
+	display: flex;
+  	justify-content: center;
+  	flex-wrap: wrap;
+  	/*background-color: #EBEBEB;*/
+}
+
+.shoe-style-title {
+	text-align: left;
+	border-bottom: 1px solid gray;
+	font-size: 35px;
+}
+
+
+/* shoe details */
+
+.shoe-details {
+	width: 300px;
+	border-right: 1px solid gray;
+	padding-right: 80px;
+	margin: 20px 80px 0px 0;
+}
+
+.shoe-details-brand, .shoe-details-size {
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+.shoe-details-brand {
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+.shoe-details-size {
+	font-size: 18px;
+}
+
+
+/* buttons */
+.shoe-add-btn {
+	background-image: linear-gradient(to right, #3baf28 , white);
+}
+
+.shoe-add-btn p {
+	padding: 3px 0 3px 24px;
+	font-size: 28px;
+	cursor: pointer;
+	color: blue;
+	font-family: Verdana;
+	font-weight: bold
+}
+
+.shoe-add-btn p:hover {
+	color: white;
+}
+
+/* shoe-form */
+.shoe-form {
+	padding: 0 0 16px 20px;
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import ShoeStyle from './ShoeStyle';
-// import {Link} from 'react-router-dom';
 import {PropTypes} from 'prop-types';
 
 class ShoeGrid extends React.Component {
@@ -12,8 +11,8 @@ class ShoeGrid extends React.Component {
   	const shoes = this.props.shoes;
 
   	return (
-  		<div classname="shoe-grid-container">
-  			<div className="shoe-grid-title">
+  		<div>
+  			<div className="shoe-header-title">
 	          <h1>StockX Inventory</h1>
 	        </div>
 	        <div className="shoe-grid">
