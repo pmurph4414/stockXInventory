@@ -14,7 +14,7 @@ body, .app {
 /* shoe grid */
 .shoe-grid-container {
 	width: 80%;
-	padding: 10px 50px 0 50px;
+	padding: 20px 50px 0 20px;
 }
 
 .shoe-header-title {
@@ -25,12 +25,12 @@ body, .app {
 }
 
 .shoe-grid {
-	padding: 10px 50px 0 50px;
+	padding: 20px 50px 0 20px;
 }
 
 .shoe-grid-items {
 	list-style-type: none;
-	padding-bottom: 70px;
+	padding-bottom: 40px;
 	display: flex;
   	justify-content: center;
   	flex-wrap: wrap;
@@ -40,17 +40,21 @@ body, .app {
 .shoe-style-title {
 	text-align: left;
 	border-bottom: 1px solid gray;
-	font-size: 35px;
+	font-size: 30px;
 }
 
 
 /* shoe details */
 
 .shoe-details {
-	width: 300px;
+	width: 200px;
 	border-right: 1px solid gray;
 	padding-right: 80px;
-	margin: 20px 80px 0px 0;
+	margin: 20px 60px 0 0;
+}
+
+.shoe-details:nth-child(5n) {
+	border-right: 10px solid blue;
 }
 
 .shoe-details-brand, .shoe-details-size {

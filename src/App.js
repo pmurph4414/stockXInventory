@@ -2,7 +2,6 @@ import React from 'react'
 import './App.css'
 import {Route} from 'react-router-dom';
 import ShoeGrid from './Components/ShoeGrid';
-//import {Link} from 'react-router-dom';
 
 class App extends React.Component {
   state = {
@@ -16,21 +15,21 @@ class App extends React.Component {
         image: 'https://stockx.imgix.net/Air-Jordan-1-Retro-High-Pine-Green.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
       },
       {
-        brand: 'Addidas',
-        style: 'running',
-        name: 'Jordan 1 Retro High Pine Green',
-        size: '12.5',
-        upcid: '854103 QT',
-        image: 'https://stockx.imgix.net/Air-Jordan-1-Retro-High-Pine-Green.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+        brand: 'Nike',
+        style: 'basketball',
+        name: 'Jordan 5 Retro Wings',
+        size: '10.5',
+        upcid: '832112 PM',
+        image: 'https://stockx.imgix.net/Air-Jordan-5-Retro-Wings.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
 
       },
       {
-        brand: 'New Balance',
-        style: 'running',
-        name: 'Jordan 1 Retro High Pine Green',
-        size: 'small',
+        brand: 'Nike',
+        style: 'basketball',
+        name: 'Nike SB Dunk High Concepts Ugly Christmas Sweater 2017',
+        size: '13.0',
         upcid: '623122 QT',
-        image: 'https://stockx.imgix.net/Air-Jordan-1-Retro-High-Pine-Green.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+        image: 'https://stockx.imgix.net/Nike-SB-Dunk-High-Concepts-Ugly-Christmas-Sweater-2017-TD.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
 
       },
       {
@@ -43,19 +42,190 @@ class App extends React.Component {
 
       },
       {
-        brand: 'Addidas',
+        brand: 'Nike',
+        style: 'basketball',
+        name: 'Nike Hyperdunk Marty McFly 2015',
+        size: '14.5',
+        upcid: '854103 QT',
+        image: 'https://stockx.imgix.net/Nike-Hyperdunk-Supreme-Marty-McFly-2015.jpg?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+      },
+
+      {
+        brand: 'Nike',
         style: 'running',
         name: 'Jordan 1 Retro High Pine Green',
-        size: 'medium',
-        upcid: '854103 QT'
+        size: '12.5',
+        upcid: '990103 QT',
+        image: 'https://stockx.imgix.net/Air-Jordan-1-Retro-High-Pine-Green.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
       },
       {
-        brand: 'New Balance',
+        brand: 'Nike',
+        style: 'running',
+        name: 'Jordan 5 Retro Wings',
+        size: '10.5',
+        upcid: '832112 PM',
+        image: 'https://stockx.imgix.net/Air-Jordan-5-Retro-Wings.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+
+      },
+      {
+        brand: 'Nike',
+        style: 'running',
+        name: 'Nike SB Dunk High Concepts Ugly Christmas Sweater 2017',
+        size: '13.0',
+        upcid: '623122 QT',
+        image: 'https://stockx.imgix.net/Nike-SB-Dunk-High-Concepts-Ugly-Christmas-Sweater-2017-TD.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+
+      },
+      {
+        brand: 'Nike',
         style: 'running',
         name: 'Jordan 1 Retro High Pine Green',
         size: 'small',
-        upcid: '623122 QT'
-      }
+        upcid: '929283 QT',
+        image: 'https://stockx.imgix.net/Air-Jordan-1-Retro-High-Pine-Green.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+
+      },
+      {
+        brand: 'Nike',
+        style: 'running',
+        name: 'Nike Hyperdunk Marty McFly 2015',
+        size: '14.5',
+        upcid: '854103 QT',
+        image: 'https://stockx.imgix.net/Nike-Hyperdunk-Supreme-Marty-McFly-2015.jpg?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+      },
+
+      {
+        brand: 'Nike',
+        style: 'walking',
+        name: 'Jordan 1 Retro High Pine Green',
+        size: '12.5',
+        upcid: '990103 QT',
+        image: 'https://stockx.imgix.net/Air-Jordan-1-Retro-High-Pine-Green.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+      },
+      {
+        brand: 'Nike',
+        style: 'walking',
+        name: 'Jordan 5 Retro Wings',
+        size: '10.5',
+        upcid: '832112 PM',
+        image: 'https://stockx.imgix.net/Air-Jordan-5-Retro-Wings.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+
+      },
+      {
+        brand: 'Nike',
+        style: 'walking',
+        name: 'Nike SB Dunk High Concepts Ugly Christmas Sweater 2017',
+        size: '13.0',
+        upcid: '623122 QT',
+        image: 'https://stockx.imgix.net/Nike-SB-Dunk-High-Concepts-Ugly-Christmas-Sweater-2017-TD.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+
+      },
+      {
+        brand: 'Nike',
+        style: 'walking',
+        name: 'Jordan 1 Retro High Pine Green',
+        size: 'small',
+        upcid: '929283 QT',
+        image: 'https://stockx.imgix.net/Air-Jordan-1-Retro-High-Pine-Green.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+
+      },
+      {
+        brand: 'Nike',
+        style: 'walking',
+        name: 'Nike Hyperdunk Marty McFly 2015',
+        size: '14.5',
+        upcid: '854103 QT',
+        image: 'https://stockx.imgix.net/Nike-Hyperdunk-Supreme-Marty-McFly-2015.jpg?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+      },
+
+      {
+        brand: 'Nike',
+        style: 'tennis',
+        name: 'Jordan 1 Retro High Pine Green',
+        size: '12.5',
+        upcid: '990103 QT',
+        image: 'https://stockx.imgix.net/Air-Jordan-1-Retro-High-Pine-Green.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+      },
+      {
+        brand: 'Nike',
+        style: 'tennis',
+        name: 'Jordan 5 Retro Wings',
+        size: '10.5',
+        upcid: '832112 PM',
+        image: 'https://stockx.imgix.net/Air-Jordan-5-Retro-Wings.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+
+      },
+      {
+        brand: 'Nike',
+        style: 'tennis',
+        name: 'Nike SB Dunk High Concepts Ugly Christmas Sweater 2017',
+        size: '13.0',
+        upcid: '623122 QT',
+        image: 'https://stockx.imgix.net/Nike-SB-Dunk-High-Concepts-Ugly-Christmas-Sweater-2017-TD.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+
+      },
+      {
+        brand: 'Nike',
+        style: 'tennis',
+        name: 'Jordan 1 Retro High Pine Green',
+        size: 'small',
+        upcid: '929283 QT',
+        image: 'https://stockx.imgix.net/Air-Jordan-1-Retro-High-Pine-Green.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+
+      },
+      {
+        brand: 'Nike',
+        style: 'tennis',
+        name: 'Nike Hyperdunk Marty McFly 2015',
+        size: '14.5',
+        upcid: '854103 QT',
+        image: 'https://stockx.imgix.net/Nike-Hyperdunk-Supreme-Marty-McFly-2015.jpg?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+      },
+
+      {
+        brand: 'Nike',
+        style: 'crosstrainers',
+        name: 'Jordan 1 Retro High Pine Green',
+        size: '12.5',
+        upcid: '990103 QT',
+        image: 'https://stockx.imgix.net/Air-Jordan-1-Retro-High-Pine-Green.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+      },
+      {
+        brand: 'Nike',
+        style: 'crosstrainers',
+        name: 'Jordan 5 Retro Wings',
+        size: '10.5',
+        upcid: '832112 PM',
+        image: 'https://stockx.imgix.net/Air-Jordan-5-Retro-Wings.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+
+      },
+      {
+        brand: 'Nike',
+        style: 'crosstrainers',
+        name: 'Nike SB Dunk High Concepts Ugly Christmas Sweater 2017',
+        size: '13.0',
+        upcid: '623122 QT',
+        image: 'https://stockx.imgix.net/Nike-SB-Dunk-High-Concepts-Ugly-Christmas-Sweater-2017-TD.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+
+      },
+      {
+        brand: 'Nike',
+        style: 'crosstrainers',
+        name: 'Jordan 1 Retro High Pine Green',
+        size: 'small',
+        upcid: '929283 QT',
+        image: 'https://stockx.imgix.net/Air-Jordan-1-Retro-High-Pine-Green.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+
+      },
+      {
+        brand: 'Nike',
+        style: 'crosstrainers',
+        name: 'Nike Hyperdunk Marty McFly 2015',
+        size: '14.5',
+        upcid: '854103 QT',
+        image: 'https://stockx.imgix.net/Nike-Hyperdunk-Supreme-Marty-McFly-2015.jpg?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90'
+      },
+      
     ]
   }
 
@@ -67,6 +237,11 @@ class App extends React.Component {
     }))
   }
 
+  createShoe = (shoe) => {
+    this.setState((currentState) => ({
+      shoes: currentState.shoes.concat([shoe])
+    }))
+  }
 
   render() {
   	return (
@@ -76,7 +251,11 @@ class App extends React.Component {
             render={() => 
               (<ShoeGrid 
                 shoes={this.state.shoes}
-                onRemoveShoe={this.removeShoe} />
+                onRemoveShoe={this.removeShoe} 
+                onCreateShoe={(shoe) => {
+                  this.createShoe(shoe)
+                }}  
+                />
           )}/>
         </div>
       )} />

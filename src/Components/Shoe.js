@@ -3,12 +3,11 @@ import {PropTypes} from 'prop-types';
 
 class Shoe extends React.Component {
   static propTypes = {
-        shoe: PropTypes.object.isRequired,
-        onRemoveShoe: PropTypes.func.isRequired
+    shoe: PropTypes.object.isRequired
   }
 
   render() {
-  	const {shoe, onRemoveShoe} = this.props;
+  	const shoe = this.props.shoe;
 
   	return (
   		<div>
@@ -17,10 +16,10 @@ class Shoe extends React.Component {
               <div>
                 <div
                   style={{
-                    width: 280,
-                    height: 220,
+                    width: 170,
+                    height: 130,
                     backgroundImage: `url(${shoe.image})`,
-                    backgroundSize: 280
+                    backgroundSize: 170
                   }}>
                 </div>
                 <div className="shoe-details-brand">{shoe.name}</div>

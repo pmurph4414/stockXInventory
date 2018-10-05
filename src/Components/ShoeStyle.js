@@ -7,8 +7,7 @@ import ShoeForm from './ShoeForm';
 class ShoeStyle extends React.Component {
 	static propTypes = {
     	shoes: PropTypes.array.isRequired,
-    	title: PropTypes.string.isRequired,
-      onRemoveShoe: PropTypes.func.isRequired
+    	title: PropTypes.string.isRequired
   }
 
   state = {
@@ -32,10 +31,7 @@ class ShoeStyle extends React.Component {
             {shoes.map((shoe, index) => 
               (<Shoe 
                 shoe={shoe} 
-                key={index} => {
-                  this.removeShoe
-                } 
-                />
+                key={index} />
             ))}
           </ol>
       	</div>

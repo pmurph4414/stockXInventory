@@ -1,13 +1,18 @@
 import React from 'react';
-// import {PropTypes} from 'prop-types';
+import serializeForm from 'form-serialize';
 
 class ShoeForm extends React.Component {
-  // static propTypes = {
-  //     shoes: PropTypes.array.isRequired
-  // }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const values = serializeForm(e.target, {hash:true})
+
+    if(this.props.onCreateShoe) {
+      this.props.onCreateShoe(values)
+    }
+  }
 
   render() {
-
     return (
       <div className="shoe-form">
         <h2>Tell us about your shoe</h2>
@@ -15,15 +20,39 @@ class ShoeForm extends React.Component {
           <div>
             <label>Brand</label>
             <input 
-              type="text">
+              type="text"
+              name="brand">
             </input>
           </div>
           <div>
-            <label>style</label>
+            <label>Style</label>
             <input
-              type="text">
+              type="text"
+              name="style">
             </input>
-          </div>    
+          </div>
+          <div>
+            <label>Name</label>
+            <input
+              type="text"
+              name="name">
+            </input>
+          </div>
+          <div>
+            <label>Size</label>
+            <input
+              type="text"
+              name="size">
+            </input>
+          </div>
+          <div>
+            <label>UPCid</label>
+            <input
+              type="text"
+              name="upcid">
+            </input>
+          </div>
+          <button>Add Shoe</button>  
         </form>
       </div>
     )
