@@ -25,16 +25,14 @@ body, .app {
 }
 
 .shoe-grid {
-	padding: 20px 50px 0 20px;
+	padding: 5px 20px 5px 20px;
 }
 
 .shoe-grid-items {
 	list-style-type: none;
-	padding-bottom: 40px;
 	display: flex;
   	justify-content: center;
   	flex-wrap: wrap;
-  	/*background-color: #EBEBEB;*/
 }
 
 .shoe-style-title {
@@ -74,12 +72,13 @@ body, .app {
 
 /* buttons */
 .shoe-add-btn {
-	background-image: linear-gradient(to right, #3baf28 , white);
+	background-color: #3baf28;
+	width: 100%;
 }
 
 .shoe-add-btn p {
 	padding: 3px 0 3px 24px;
-	font-size: 28px;
+	font-size: 20px;
 	cursor: pointer;
 	color: blue;
 	font-family: Verdana;
@@ -93,4 +92,8 @@ body, .app {
 /* shoe-form */
 .shoe-form {
 	padding: 0 0 16px 20px;
+}
+
+.shoe-form label {
+	margin-right: 16px;
 }

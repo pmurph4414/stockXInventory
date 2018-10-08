@@ -16,7 +16,8 @@ class ShoeForm extends React.Component {
     return (
       <div className="shoe-form">
         <h2>Tell us about your shoe</h2>
-        <form>
+        <form
+		  onSubmit={this.handleSubmit}>
           <div>
             <label>Brand</label>
             <input 
@@ -52,7 +53,8 @@ class ShoeForm extends React.Component {
               name="upcid">
             </input>
           </div>
-          <button>Add Shoe</button>  
+          <button>Add Shoe</button>
+		  <button>Reset form</button>	
         </form>
       </div>
     )
